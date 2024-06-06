@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Spacetime Gaussian Feature Splatting for Real-Time Dynamic View Synthesis">
+        content="Localized Gaussian Point Management">
   <meta name="keywords" content="neural fields, 6DoF, Novel View Synthesis, MR/XR, computer vision">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Localized Gaussian Point Management</title>
@@ -38,10 +38,6 @@
 </head>
 
 <body>
-
-
-
-
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
@@ -206,55 +202,6 @@
   </div>
 </section>
 
-
-<!-- <section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-img_pearl">
-          <video poster="" id="img_pearl" autoplay controls muted loop playsinline height="100%">
-            <source src="./videos/02flamegif.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-img_pearl">
-          <video poster="" id="sdf_mechanism" autoplay controls muted loop playsinline height="100%">
-            <source src="./videos/birthdaygif.mp4" 
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-img_pearl">
-          <video poster="" id="nerf_syn_materials" autoplay controls muted loop playsinline height="100%">
-            <source src="./videos/searsteakrawgif.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-nerf_llff_horns">
-          <video poster="" id="nerf_llff_horns" autoplay controls muted loop playsinline height="100%">
-            <source src="./videos/02flame264.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-img_pluto">
-          <video poster="" id="img_pluto" autoplay controls muted loop playsinline height="100%">
-            <source src="./videos/birthdaysmall.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-sdf_david">
-          <video poster="" id="sdf_david" autoplay controls muted loop playsinline height="100%">
-            <source src="./videos/searsteakmv.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-
-      </div>
-    </div>
-    <div  class="columns is-centered has-text-centered" style="text-align: center;">  
-       <p><br/>Real-time interactive demo and spiral path rendering. Scenes are from Google Immersive [1], Technicolor [2], and Neural 3D Video [3] datasets.</br> <small>*The visualization of the Gaussians is inspired by Luma AI.</small></div>
-  </div>
-</section> -->
-
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -270,27 +217,10 @@
     <!--/ Abstract. -->
     <!-- Paper video. -->
     <br>
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/YsPPmf-E6Lg" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
     <!--/ Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <p>&nbsp;</p>
-          <!-- <h2 class="title is-3">Real-Time 8K Demo</h2>
-          <center>
-          <video poster="" id="img_shibuya" autoplay controls muted loop playsinline width="100%">
-            <source src="./videos/realtimedemo1cropscale.mp4"
-                    type="video/mp4">
-          </video>
-          </center> -->
-
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <h2 class="title is-3">Method</h2>
@@ -356,14 +286,14 @@
           <div class="grid-container">
             <div class="grid-item">
               <div class="compare" style="width: 467px;margin-right: 20px; ">
-                <img class="slider-image" style="width: 467px; clip: rect(400, 0, 979, 546);" src="./static/image/gs_images_3d_good/windows/00021-a.png" />
-                <img class="slider-image" style="width: 467px; clip: rect(400, 0, 979, 546);" src="./static/image/gs_images_3d_good/windows/00021-b.png" />
+                <img class="slider-image" style="width: 467px; " src="./static/image/gs_images_3d_good/windows/00021-a.png" />
+                <img class="slider-image" style="width: 467px; " src="./static/image/gs_images_3d_good/windows/00021-b.png" />
               </div>
             </div>
             <div class="grid-item">
               <div class="compare" style="width: 467px;">
                 <img class="slider-image" style="width: 467px;" src="./static/image/gs_images_3d_good/windows/00005-a.png" />
-                <img class="slider-image" style="width: 467px;" src="./static/image/gs_images_3d_good/windows/00005-a.png" />
+                <img class="slider-image" style="width: 467px;" src="./static/image/gs_images_3d_good/windows/00005-b.png" />
               </div>
             </div>
             <div class="grid-item">
@@ -410,7 +340,7 @@
           </div>
           <!--/ Paper video. -->
 
-          <div class="grid-container">
+          <!-- <div class="grid-container">
             <div class="grid-item">
               <div class="compare" style="width: 467px; margin-right: 20px; margin-top: 10px;">
                 <img class="slider-image" style="width: 467px" src="./static/image/gs_images_3d_good/light/00024-a.png" />
@@ -435,7 +365,7 @@
                 <span style="display: inline; text-align: right;"><b>3DGS</b></span>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="grid-container">
             <div class="grid-item">
@@ -491,7 +421,7 @@
             </div>
           </div>
 
-          <div class="grid-container">
+          <!-- <div class="grid-container">
             <div class="grid-item">
               <div class="compare" style="width: 467px; margin-right: 20px; margin-top: 10px;">
                 <img class="slider-image" style="width: 467px" src="./static/image/gs_images_3d_good/light/00048-a.png" />
@@ -516,7 +446,7 @@
                 <span style="display: inline; text-align: right;"><b>3DGS</b></span>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="grid-container">
             <div class="grid-item">
